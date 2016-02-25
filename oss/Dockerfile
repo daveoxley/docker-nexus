@@ -23,8 +23,6 @@ RUN mkdir -p /opt/sonatype/nexus \
   && mv /tmp/nexus-${NEXUS_VERSION}/* /opt/sonatype/nexus/ \
   && rm -rf /tmp/nexus-${NEXUS_VERSION}
 
-VOLUME ${SONATYPE_WORK}
-
 EXPOSE 8081
 WORKDIR /opt/sonatype/nexus
 ENV CONTEXT_PATH /
